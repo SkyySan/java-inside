@@ -43,7 +43,7 @@
            <configuration>
              <release>15</release>
              <compilerArgs>--enable-preview</compilerArgs>
-           </configuration>  
+           </configuration>
          </plugin>
        </plugins>
      </build>
