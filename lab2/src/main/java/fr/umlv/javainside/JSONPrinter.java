@@ -29,7 +29,13 @@ public class JSONPrinter {
     */
 
     public static String toJSON(Record record){
-        return "{ " + Arrays.stream(record.getClass().getRecordComponents()).map(RecordComponent::getAccessor).map(m -> "\"" + m.getName() + "\" : " + invokeMethod(record, m)).map(Object::toString).collect(Collectors.joining(","))+ " }" ;
+        return "{ " +
+                Arrays.stream(record.getClass()
+                .getRecordComponents())
+                .map(RecordComponent::getAccessor)
+                .map(m -> "\"" + m.getName() + "\" : " + invokeMethod(record, m))
+                .map(Object::toString).collect(Collectors.joining(","))
+                + " }" ;
     }
 
     private static Object invokeMethod(Record record, Method m){
