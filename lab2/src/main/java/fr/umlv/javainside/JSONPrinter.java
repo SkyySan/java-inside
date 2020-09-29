@@ -1,7 +1,10 @@
 package fr.umlv.javainside;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.lang.reflect.RecordComponent;
+import java.lang.reflect.UndeclaredThrowableException;
 import java.util.Arrays;
-import java.util.Objects;
 import java.util.stream.Collectors;
 
 public class JSONPrinter {
@@ -25,13 +28,27 @@ public class JSONPrinter {
     }
     */
 
-    public static String toJSON(Record record) {
-        return Arrays.stream(record.getClass().getRecordComponents()).map(Object::toString).collect(Collectors.joining(","));
+    public static String toJSON(Record record){
+        return "{ " + Arrays.stream(record.getClass().getRecordComponents()).map(RecordComponent::getAccessor).map(m -> "\"" + m.getName() + "\" : " + invokeMethod(record, m)).map(Object::toString).collect(Collectors.joining(","))+ " }" ;
     }
-    public static void main(String[] args) {
-        var person = new Person("John", "Doe");
-        System.out.println(toJSON(person));
-        var alien = new Alien(100, "Saturn");
-        System.out.println(toJSON(alien));
+
+    private static Object invokeMethod(Record record, Method m){
+        try {
+            final var invoke = m.invoke(record);
+            if(m.getReturnType().getName().equals("java.lang.String"))
+                return "\"" + invoke +"\"";
+            else {
+                return invoke;
+            }
+        } catch (IllegalAccessException e) {
+            throw (IllegalAccessError) new IllegalAccessError().initCause(e);
+        } catch (InvocationTargetException e) {
+            var cause = e.getCause();
+            if(cause instanceof RuntimeException re)
+                throw re;
+            if(cause instanceof Error error)
+                throw error;
+            throw new UndeclaredThrowableException(cause);
+        }
     }
 }
