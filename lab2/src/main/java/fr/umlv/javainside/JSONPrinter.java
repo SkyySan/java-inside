@@ -34,7 +34,8 @@ public class JSONPrinter {
                 .getRecordComponents())
                 .map(RecordComponent::getAccessor)
                 .map(m -> "\"" + m.getName() + "\" : " + invokeMethod(record, m))
-                .map(Object::toString).collect(Collectors.joining(","))
+                .map(Object::toString)
+                .collect(Collectors.joining(", "))
                 + " }" ;
     }
 
