@@ -51,31 +51,7 @@ public class JSONPrinter {
                 .map(fun -> fun.apply(record))
                 .collect(Collectors.joining(", ","{","}"));
     }
-    /*
-    public static String toJSON(Record record){
-        return "{ " +
-                Arrays.stream(record.getClass()
-                .getRecordComponents())
-                .map(RecordComponent::getAccessor)
-                .map(m -> "\"" + methodName(m) + "\" : " + invokeMethod(record, m))
-                .map(Object::toString)
-                .collect(Collectors.joining(", "))
-                + " }" ;
-    }
-
-    private static String methodName(Method m) {
-        var name = m.getAnnotation(JSONProperty.class);
-        return (name != null) ? name.value() : m.getName();
-    }
-    */
-    /*
-    private static String name(RecordComponent component){
-        var property = component.getAnnotation(JSONProperty.class);
-        if(property == null)
-            return component.getName();
-        return property.value();
-    }
-    */
+  
     private static Object invokeMethod(Record record, RecordComponent rc){
         try {
             final var invoke = rc.getAccessor().invoke(record);

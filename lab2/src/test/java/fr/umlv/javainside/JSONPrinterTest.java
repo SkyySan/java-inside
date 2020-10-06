@@ -1,7 +1,6 @@
 package fr.umlv.javainside;
 
 import org.junit.jupiter.api.Test;
-
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -13,8 +12,6 @@ import static java.util.Objects.requireNonNull;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class JSONPrinterTest {
-
-
 
     private record Alien(int age, String planet) {
         public Alien {
