@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="fr.umlv.javainside.LoggerTest" time="0.039" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd"
+           name="fr.umlv.javainside.LoggerTest" time="0.039" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="/usr/local/apps/alternatives/java/jdk-15/lib"/>
-    <property name="sun.java.command" value="/home/6ifo2/sassie/git/java-inside/lab4/target/surefire/surefirebooter18027349951685728309.jar /home/6ifo2/sassie/git/java-inside/lab4/target/surefire 2020-10-13T14-48-40_111-jvmRun1 surefire5337585650716236494tmp surefire_313039265492669321075tmp"/>
+    <property name="sun.java.command" value="/home/6ifo2/sassie/git/java-inside/lab4/target/surefire/surefirebooter1441501623588346069.jar /home/6ifo2/sassie/git/java-inside/lab4/target/surefire 2020-10-20T09-14-46_019-jvmRun1 surefire13260942032484363905tmp surefire_31772814246109863982tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/6ifo2/sassie/git/java-inside/lab4/target/test-classes:/home/6ifo2/sassie/git/java-inside/lab4/target/classes:/home/6ifo2/sassie/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/home/6ifo2/sassie/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/6ifo2/sassie/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/6ifo2/sassie/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/home/6ifo2/sassie/.m2/repository/org/openjdk/jmh/jmh-core/1.25.2/jmh-core-1.25.2.jar:/home/6ifo2/sassie/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/home/6ifo2/sassie/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/6ifo2/sassie/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.25.2/jmh-generator-annprocess-1.25.2.jar:/home/6ifo2/sassie/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/home/6ifo2/sassie/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/6ifo2/sassie/git/java-inside/lab4/target/surefire/surefirebooter18027349951685728309.jar"/>
+    <property name="surefire.real.class.path" value="/home/6ifo2/sassie/git/java-inside/lab4/target/surefire/surefirebooter1441501623588346069.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15+36-1562"/>
     <property name="user.name" value="sassie"/>
@@ -51,9 +52,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="lambdaOfTest" classname="fr.umlv.javainside.LoggerTest" time="0.018"/>
+  <testcase name="lambdaOfTest" classname="fr.umlv.javainside.LoggerTest" time="0.019"/>
   <testcase name="ofError" classname="fr.umlv.javainside.LoggerTest" time="0.004"/>
   <testcase name="logWithNullAsValue" classname="fr.umlv.javainside.LoggerTest" time="0.003"/>
-  <testcase name="ofTest" classname="fr.umlv.javainside.LoggerTest" time="0.001"/>
+  <testcase name="ofTest" classname="fr.umlv.javainside.LoggerTest" time="0.002"/>
   <testcase name="logTest" classname="fr.umlv.javainside.LoggerTest" time="0.002"/>
 </testsuite>

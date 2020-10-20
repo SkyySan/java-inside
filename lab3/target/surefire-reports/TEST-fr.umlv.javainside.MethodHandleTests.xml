@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="FR"/>
     <property name="sun.boot.library.path" value="/usr/local/apps/alternatives/java/jdk-15/lib"/>
-    <property name="sun.java.command" value="/home/6ifo2/sassie/git/java-inside/lab3/target/surefire/surefirebooter16305448896355172940.jar /home/6ifo2/sassie/git/java-inside/lab3/target/surefire 2020-10-13T14-48-40_111-jvmRun1 surefire2892879131327568347tmp surefire_28701149924379029201tmp"/>
+    <property name="sun.java.command" value="/home/6ifo2/sassie/git/java-inside/lab3/target/surefire/surefirebooter5013906837039971114.jar /home/6ifo2/sassie/git/java-inside/lab3/target/surefire 2020-10-20T09-14-46_019-jvmRun1 surefire5246341954297673511tmp surefire_213510981981553755611tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/6ifo2/sassie/git/java-inside/lab3/target/test-classes:/home/6ifo2/sassie/git/java-inside/lab3/target/classes:/home/6ifo2/sassie/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/home/6ifo2/sassie/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/6ifo2/sassie/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/6ifo2/sassie/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/home/6ifo2/sassie/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/home/6ifo2/sassie/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/6ifo2/sassie/git/java-inside/lab3/target/surefire/surefirebooter16305448896355172940.jar"/>
+    <property name="surefire.real.class.path" value="/home/6ifo2/sassie/git/java-inside/lab3/target/surefire/surefirebooter5013906837039971114.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15+36-1562"/>
     <property name="user.name" value="sassie"/>
@@ -51,18 +51,18 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="asTypeAndInvokeExactStaticTest" classname="fr.umlv.javainside.MethodHandleTests" time="0.014"/>
+  <testcase name="asTypeAndInvokeExactStaticTest" classname="fr.umlv.javainside.MethodHandleTests" time="0.015"/>
   <testcase name="insertAndInvokeStaticTest" classname="fr.umlv.javainside.MethodHandleTests" time="0.002"/>
   <testcase name="findStaticTest" classname="fr.umlv.javainside.MethodHandleTests" time="0"/>
   <testcase name="dropAndInvokeStaticTest" classname="fr.umlv.javainside.MethodHandleTests" time="0.001"/>
   <testcase name="invokeExactStaticTest" classname="fr.umlv.javainside.MethodHandleTests" time="0"/>
   <testcase name="invokeExactVirtualTest" classname="fr.umlv.javainside.MethodHandleTests" time="0"/>
-  <testcase name="bindToAndInvokeVirtualTest" classname="fr.umlv.javainside.MethodHandleTests" time="0.001"/>
-  <testcase name="invokeExactConstantTest" classname="fr.umlv.javainside.MethodHandleTests" time="0.001"/>
+  <testcase name="bindToAndInvokeVirtualTest" classname="fr.umlv.javainside.MethodHandleTests" time="0.002"/>
+  <testcase name="invokeExactConstantTest" classname="fr.umlv.javainside.MethodHandleTests" time="0"/>
   <testcase name="invokeStaticTest" classname="fr.umlv.javainside.MethodHandleTests" time="0.001"/>
-  <testcase name="findVirtualTest" classname="fr.umlv.javainside.MethodHandleTests" time="0"/>
-  <testcase name="matchAllTest" classname="fr.umlv.javainside.MethodHandleTests" time="0.003"/>
-  <testcase name="matchTest" classname="fr.umlv.javainside.MethodHandleTests" time="0"/>
+  <testcase name="findVirtualTest" classname="fr.umlv.javainside.MethodHandleTests" time="0.001"/>
+  <testcase name="matchAllTest" classname="fr.umlv.javainside.MethodHandleTests" time="0.004"/>
+  <testcase name="matchTest" classname="fr.umlv.javainside.MethodHandleTests" time="0.001"/>
   <testcase name="invokeVirtualTest" classname="fr.umlv.javainside.MethodHandleTests" time="0"/>
   <testcase name="invokeExactVirtualWrongArgumentTest" classname="fr.umlv.javainside.MethodHandleTests" time="0"/>
   <testcase name="dropAndInvokeVirtualTest" classname="fr.umlv.javainside.MethodHandleTests" time="0.001"/>
