@@ -1,0 +1,3 @@
+JMH S 34 fr.umlv.javainside.SwitchBenchMark S 79 fr.umlv.javainside.jmh_generated.SwitchBenchMark_match_using_hash_codes_jmhTest S 22 match_using_hash_codes S 11 AverageTime E A 1 1 1 E I 1 5 T 3 2 s E I 1 5 T 3 2 s E I 1 3 E E E E E E U 11 NANOSECONDS E E 
+JMH S 34 fr.umlv.javainside.SwitchBenchMark S 72 fr.umlv.javainside.jmh_generated.SwitchBenchMark_match_with_gwts_jmhTest S 15 match_with_gwts S 11 AverageTime E A 1 1 1 E I 1 5 T 3 2 s E I 1 5 T 3 2 s E I 1 3 E E E E E E U 11 NANOSECONDS E E 
+JMH S 34 fr.umlv.javainside.SwitchBenchMark S 85 fr.umlv.javainside.jmh_generated.SwitchBenchMark_match_with_an_inlining_cache_jmhTest S 28 match_with_an_inlining_cache S 11 AverageTime E A 1 1 1 E I 1 5 T 3 2 s E I 1 5 T 3 2 s E I 1 3 E E E E E E U 11 NANOSECONDS E E 
